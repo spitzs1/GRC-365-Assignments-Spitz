@@ -1,0 +1,235 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Dark Matter Page</title>
+
+<style>
+	@font-face {
+            font-family: Segoe UI;
+			src: url("segoeuithis.ttf");
+			
+	}
+	
+	#page{
+		width: 928px;
+        height: 1354px;
+        background: #0d0117;
+        margin: 0 auto;
+		padding: 0 auto;
+        border: 1px solid darkgray;
+        box-shadow: 2px 3px 6px darkgray;
+		
+	}
+	h1{
+		color:#f0eed1;
+		text-align:center;
+		font-family: "Segoe UI", "Arial", "sans-serif";
+		
+	}
+	h3{
+		color: #f0eed1;
+		font-family: "Segoe UI", "Arial", "sans-serif";
+		line-height: 3em;
+		width: 824px;
+		margin: 0 auto;
+	}
+	p{
+		color: #e6e6e6;
+		ffont-family: "Segoe UI", "Arial", "sans-serif";
+		font-size: 13pt;
+		line-height: 1.4em;
+		width: 824px;
+		margin: 0 auto;
+	}
+	p::first-letter{
+		font-size: 30px;
+		font-weight: bold;
+		font-family: "Segoe UI", "Arial", "sans-serif";
+	}
+	
+	#banner-img{
+		width: 100%;
+		height: 10%;
+	}
+	ul{
+		width: 100%;
+		margin-top: -4px;
+		margin-left: -40px;
+	}
+	li{
+		font-family: "Segoe UI", "Arial", "sans-serif";
+		list-style: none;
+		float: left;
+		width: 100%;
+		height: 30px;
+		text-align: center;
+		background: #715485;
+	}
+	a li {
+		color: white;
+	}
+	li:hover, a li:hover{
+		background: #4a3459;
+	}
+	audio{
+		display: block;
+		margin: 0 auto;
+	}
+	iframe{
+		width: 640px;
+		height: 360px;
+		display: block;
+		margin: 36px auto;
+		border: 1px solid white;
+		box-shadow: 2px 3px 6px gray;
+	}
+	.gridlayout {
+		display: grid;
+		grid-template-columns: 1fr 1fr;   
+		grid-template-rows: repeat(3, 1fr); 
+		gap: 4px;                          
+		max-width: 600px;
+		height: 600px;                    
+		padding: 20px;
+		margin: 0 auto;
+	}
+
+	.gridlayout img {
+	  width: 100%;
+	  height: 100%;
+	  object-fit: cover;   
+	  display: block;
+	}
+
+	.gridlayout .tall {
+	  grid-column: 2;      
+	  grid-row: 1 / span 3; 
+	}
+	 form {
+		background: #bec8c9;
+		border-radius: 16px;
+		padding: 28px 30px;
+		max-width: 780px;
+		margin: 0 auto;
+	  }
+	  label {
+		display: block;
+		font-size: 20px;
+		margin-bottom: 2px;
+		font-family: "Segoe UI", "Arial", "sans-serif";
+	  }
+	  input, select, textarea {
+		width: 100%;
+		box-sizing: border-box;
+		border: 1px solid #777;
+		background: #fff;
+		padding: 10px;
+		font-size: 17px;
+		font-family: "Segoe UI", "Arial", "sans-serif";
+		margin-bottom: 4px;
+	  }
+	  input, select {
+		  height: 48px; 
+	}
+	  textarea { 
+		  height: 135px; 
+		  resize: vertical; 
+	}
+	  .check {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		margin: 12px 0;
+	  }
+	
+	  .check input {
+		  width: auto; 
+		  height: auto; 
+		  margin: 0; 
+	}
+	
+	  .check label { 
+		  margin: 0; 
+		  font-size: 18px; 
+	}
+	
+	  button {
+		margin-top: 12px;
+		padding: 12px 28px;
+		font-size: 18px;
+		font-family: inherit;
+		background: #2f3b3d;
+		color: #fff;
+		border: none;
+		border-radius: 6px;
+		cursor: pointer;
+	  }
+	  button:hover { 
+		  background: #1c2527; 
+	}
+
+</style>
+</head>
+
+<body>
+	<div id="page">
+	<img id="banner-img" src="dur8gy-2286eb12-d672-4f75-b157-0ccd27d33bf5.jpg">
+	<ul>
+		<a href="Assignment_1_Simple_Html_Page_Spitz.html"><li>Home</li></a>
+
+	</ul>
+	<h1><u>Contact Page</u></h1>
+	<form action="#" method="post">
+  <label for="fname">First name</label>
+  <input type="text" id="fname" name="fname" required>
+
+  <label for="lname">Last name</label>
+  <input type="text" id="lname" name="lname" required>
+
+  <label for="email">Email</label>
+  <input type="email" id="email" name="email" required>
+
+
+
+  <label for="topic">Topic of interest</label>
+  <select id="topic" name="topic">
+    <option value="">Select a topic…</option>
+    <option>Dark matter basics</option>
+    <option>Galaxy rotation curves</option>
+    <option>Gravitational lensing</option>
+    <option>WIMPs &amp; particle candidates</option>
+    <option>Axions</option>
+    <option>Direct detection experiments</option>
+    <option>Cosmic microwave background</option>
+    <option>Dark energy</option>
+    <option>Other</option>
+  </select>
+
+  <label for="level">Your background</label>
+  <select id="level" name="level">
+    <option value="">Select one…</option>
+    <option>Curious beginner</option>
+    <option>Student</option>
+    <option>Educator</option>
+    <option>Amateur astronomer</option>
+    <option>Professional researcher</option>
+  </select>
+
+  <label for="subject">Subject</label>
+  <input type="text" id="subject" name="subject">
+
+  <label for="message">Message</label>
+  <textarea id="message" name="message" placeholder="Write message here."></textarea>
+
+  <div class="check">
+    <input type="checkbox" id="newsletter" name="newsletter">
+    <label for="newsletter">Send me news about new dark matter discoveries</label>
+  </div>
+
+  <button type="submit">Send</button>
+</form>
+	
+	</div>
+</body>
+</html>
